@@ -23,10 +23,10 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 st.set_page_config(page_title="AIDL RAG Chatbot", page_icon="🦜")
 st.title("AIDL RAG Chatbot")
 
-old='''
+
 __import__('pysqlite3') 
 import sys 
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')'''
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 
