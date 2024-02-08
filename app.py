@@ -90,6 +90,7 @@ retriever = ParentDocumentRetriever(
     docstore=store,
     child_splitter=child_splitter,
     parent_splitter=parent_splitter,
+    search_kwargs={"k": 2}
 )
 
 combine_docs_chain = create_stuff_documents_chain(llm, prompt)
